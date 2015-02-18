@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.tessier.carlos.misproyectos" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GoogleJSON"
+            android:label="@string/title_activity_google_json" >
+        </activity>
+        <activity
+            android:name=".Actividad_Intent_1"
+            android:label="@string/title_activity_actividad__intent_1" >
+        </activity>
+        <activity
+            android:name=".Actividad_Intent_1_2"
+            android:label="@string/title_activity_actividad__intent_1_2"
+            android:parentActivityName=".Actividad_Intent_1" >
+        </activity>
+        <activity
+            android:name=".CicloVida"
+            android:label="@string/title_activity_ciclo_vida" >
+        </activity>
+        <activity
+            android:name=".Pulsame"
+            android:label="@string/title_activity_pulsame" >
+        </activity>
+        <activity
+            android:name=".Intent_2"
+            android:label="@string/title_activity_intent_2" >
+        </activity>
+        <activity
+            android:name=".Intent_2_1"
+            android:label="@string/title_activity_intent_2_1" >
+        </activity>
+        <activity
+            android:name=".Intent_3"
+            android:label="@string/title_activity_intent_3" >
+        </activity>
+        <activity
+            android:name=".Intent_3_1"
+            android:label="@string/title_activity_intent_3_1" >
+        </activity>
+        <activity
+            android:name=".Intent_devolverdato"
+            android:label="@string/title_activity_intent_devolverdato" >
+        </activity>
+        <activity
+            android:name=".Intent_devolverdato_1"
+            android:label="@string/title_activity_intent_devolverdato_1" >
+        </activity>
+        <activity
+            android:name=".Progress_bar"
+            android:label="@string/title_activity_progress_bar" >
+        </activity>
+        <activity
+            android:name=".BroadcastReceiver"
+            android:label="@string/title_activity_broadcast_receiver" >
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="es.tessier.carlos.misproyectos.CUSTOM_INTENT" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Notificacion"
+            android:label="@string/title_activity_notificacion" >
+        </activity>
+        <activity
+            android:name=".Notificacion_view"
+            android:label="@string/title_activity_notificacion_view" >
+        </activity>
+        <activity
+            android:name=".ImplicitIntents"
+            android:label="@string/title_activity_implicit_intents" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="android.intent.action.CALL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="geo" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

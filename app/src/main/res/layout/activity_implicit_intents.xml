@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="es.tessier.carlos.misproyectos.ImplicitIntents">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="www.uem.es"
+        android:id="@+id/button12"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:onClick="onClickWebBrowser" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TELEFONO UEM"
+        android:id="@+id/button13"
+        android:layout_below="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:onClick="onClickShowTelephone" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="localizacion uem"
+        android:id="@+id/button14"
+        android:layout_below="@+id/button13"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="66dp"
+        android:onClick="onClickShowMap" />
+</RelativeLayout>
